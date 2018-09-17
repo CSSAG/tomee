@@ -1711,12 +1711,16 @@
     </dependencies>
   </dependencyManagement>
 
-  <distributionManagement>
-    <site>
-      <id>openejb-website</id>
-      <url>scp://people.apache.org/www/tomee.apache.org/openejb/maven</url>
-    </site>
-  </distributionManagement>
+<distributionManagement>
+	<snapshotRepository>
+		<id>emoneyusa-snapshot</id>
+		<url>https://nexus.emoneyusa.com/repository/emoneyusa-snapshots</url>
+	</snapshotRepository>
+	<repository>
+		<id>emoneyusa-release</id>
+		<url>https://nexus.emoneyusa.com/repository/emoneyusa-release</url>
+	</repository>
+</distributionManagement>
 
   <reporting>
     <plugins>
