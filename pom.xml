@@ -602,7 +602,7 @@
         <module>container</module>
         <module>server</module>
         <module>mp-jwt</module>
-        <module>examples</module>
+        <!-- <module>examples</module> -->
         <module>assembly</module>
         <module>tck</module>
         <module>arquillian</module>
@@ -625,7 +625,7 @@
     <profile>
       <id>java11tests</id>
       <modules>
-        <module>examples</module>
+        <!-- <module>examples</module> -->
         <module>itests/microprofile-jwt-itests</module>
         <module>arquillian/arquillian-tomee-tests</module>
         <module>tck</module>
