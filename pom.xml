@@ -215,7 +215,7 @@
     <version.axiom>1.2.20</version.axiom>
     <version.xalan>2.7.2</version.xalan>
     <version.hibernate>5.4.10.Final</version.hibernate>
-    <version.eclipselink>2.7.7</version.eclipselink>
+    <version.eclipselink>2.7.9</version.eclipselink>
     <version.groovy>2.4.12</version.groovy>
 
     <!-- arquillian related -->
@@ -2024,9 +2024,13 @@
   </dependencyManagement>
 
   <distributionManagement>
-    <site>
-      <id>openejb-website</id>
-      <url>scp://people.apache.org/www/tomee.apache.org/openejb/maven</url>
-    </site>
+  	<snapshotRepository>
+  		<id>emoneyusa-snapshot</id>
+  		<url>https://nexus.emoneyusa.com/repository/emoneyusa-snapshots</url>
+  	</snapshotRepository>
+  	<repository>
+  		<id>emoneyusa-release</id>
+  		<url>https://nexus.emoneyusa.com/repository/emoneyusa-release</url>
+  	</repository>
   </distributionManagement>
 </project>
