@@ -26,7 +26,7 @@
   <parent>
     <artifactId>tomee-project</artifactId>
     <groupId>org.apache.tomee</groupId>
-    <version>8.0.13-SNAPSHOT</version>
+    <version>8.0.12.emoneyusa.0-SNAPSHOT</version>
   </parent>
 
   <artifactId>examples</artifactId>
@@ -221,9 +221,7 @@
     <module>mp-custom-healthcheck</module>
     <module>jsonb-configuration</module>
     <module>jsonb-custom-serializer</module>
-    <module>vaadin-lts-v08-simple</module>
-    <module>vaadin-lts-v10-simple</module>
-    <module>vaadin-vxx-simple</module>
+
     <module>cloud-tomee-azure</module>
     <module>mp-faulttolerance-timeout</module>
     <module>xa-datasource</module>
