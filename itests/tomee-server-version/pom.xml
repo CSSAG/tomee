@@ -23,7 +23,7 @@
   <parent>
     <artifactId>itests</artifactId>
     <groupId>org.apache.tomee</groupId>
-    <version>8.0.17-css</version>
+    <version>8.0.17</version>
   </parent>
 
   <artifactId>tomee-server-version</artifactId>
