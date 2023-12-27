@@ -24,7 +24,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.superbiz</groupId>
   <artifactId>ear-testing</artifactId>
-  <version>8.0.17-SNAPSHOT</version>
+  <version>8.0.17-css</version>
   <packaging>pom</packaging>
   <name>TomEE :: Examples :: Ear Testing</name>
   <modules>
@@ -96,4 +96,3 @@
   </distributionManagement>
 
 </project>
-

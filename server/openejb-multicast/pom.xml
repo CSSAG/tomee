@@ -21,7 +21,7 @@
   <parent>
     <artifactId>server</artifactId>
     <groupId>org.apache.tomee</groupId>
-    <version>8.0.17-SNAPSHOT</version>
+    <version>8.0.17-css</version>
     <relativePath>../pom.xml</relativePath>
   </parent>
 
@@ -57,4 +57,3 @@
     </plugins>
   </build>
 </project>
-
