@@ -1,6 +1,7 @@
 pipeline {
     agent { label 'slave003' }
     parameters { booleanParam(name: 'scanOnly', defaultValue: true, description: 'Führt nur den NexusIQ-Scan aus, ohne neu zu bauen.') }
+    parameters { booleanParam(name: 'newVersion', defaultValue: false, description: 'Muss gesetzt werden, wenn eine neue Version gebaut werden soll.') }
     tools {
         maven 'Maven'
     }
@@ -19,7 +20,11 @@ pipeline {
             when { expression { ! params.scanOnly } }
             steps {
                 script {
-                    sh "mvn -Pquick -Dsurefire.useFile=false -DdisableXmlReport=true -DuniqueVersion=false -ff -Dassemble -DskipTests -DfailIfNoTests=false clean install"
+                    if (params.newVersion) {
+                        sh "mvn clean install -pl tomee/apache-tomee -am -Dmaven.test.skip=true"
+                    } else {
+                        sh "mvn -Pquick -Dsurefire.useFile=false -DdisableXmlReport=true -DuniqueVersion=false -ff -Dassemble -DskipTests -DfailIfNoTests=false clean install"
+                    }
                 }
             }
         }
