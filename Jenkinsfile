@@ -1,7 +1,9 @@
 pipeline {
     agent { label 'slave003' }
-    parameters { booleanParam(name: 'scanOnly', defaultValue: true, description: 'Führt nur den NexusIQ-Scan aus, ohne neu zu bauen.') }
-    parameters { booleanParam(name: 'newVersion', defaultValue: false, description: 'Muss gesetzt werden, wenn eine neue Version gebaut werden soll.') }
+    parameters { 
+        booleanParam(name: 'scanOnly', defaultValue: true, description: 'Führt nur den NexusIQ-Scan aus, ohne neu zu bauen.'),
+        booleanParam(name: 'newVersion', defaultValue: false, description: 'Muss gesetzt werden, wenn eine neue Version gebaut werden soll.') 
+        }
     tools {
         maven 'Maven'
     }
