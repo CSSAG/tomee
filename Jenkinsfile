@@ -6,6 +6,7 @@ pipeline {
     }
     tools {
         maven 'Maven'
+        jdk "JDK 1.8"
     }
     triggers {
         cron('5 8 * * 3')
@@ -23,7 +24,7 @@ pipeline {
             steps {
                 script {
                     if (params.newVersion) {
-                        sh "mvn clean install -pl tomee/apache-tomee -am -Dmaven.test.skip=true"
+                        sh "mvn clean install -e -pl tomee/apache-tomee -am"
                     } else {
                         sh "mvn -Pquick -Dsurefire.useFile=false -DdisableXmlReport=true -DuniqueVersion=false -ff -Dassemble -DskipTests -DfailIfNoTests=false clean install"
                     }
