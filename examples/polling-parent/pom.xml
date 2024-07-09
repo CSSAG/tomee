@@ -21,13 +21,13 @@
 
   <groupId>jug</groupId>
   <artifactId>polling-parent</artifactId>
-  <version>8.0.19-SNAPSHOT</version>
+  <version>8.0.19-css</version>
   <packaging>pom</packaging>
   <name>TomEE :: Examples :: Polling</name>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <tomee.version>8.0.19-SNAPSHOT</tomee.version>
+    <tomee.version>8.0.19-css</tomee.version>
   </properties>
 
   <build>

@@ -8,7 +8,7 @@
 <!-- ====================================================================== -->
 <!--                                                                        -->
 <!-- Effective POM for project                                              -->
-<!-- 'org.apache.tomee.gradle:tomee-embedded:jar:8.0.19-SNAPSHOT'           -->
+<!-- 'org.apache.tomee.gradle:tomee-embedded:jar:8.0.19-css'           -->
 <!--                                                                        -->
 <!-- ====================================================================== -->
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
@@ -16,11 +16,11 @@
   <parent>
     <groupId>org.apache.tomee.gradle</groupId>
     <artifactId>gradle</artifactId>
-    <version>8.0.19-SNAPSHOT</version>
+    <version>8.0.19-css</version>
   </parent>
   <groupId>org.apache.tomee.gradle</groupId>
   <artifactId>tomee-embedded</artifactId>
-  <version>8.0.19-SNAPSHOT</version>
+  <version>8.0.19-css</version>
   <name>TomEE :: Gradle Plugins :: TomEE Embedded</name>
   <description>Apache OpenEJB is an open source, modular, configurable and extensible EJB Container System and EJB Server.</description>
   <url>https://tomee.apache.org/gradle/tomee-embedded</url>
@@ -101,9 +101,9 @@
     <openejb.bundle.activator />
     <openejb.osgi.dynamic.import />
     <openejb.osgi.dynamic.import.pkg />
-    <openejb.osgi.export>org.apache.tomee*;version=8.0.19-SNAPSHOT</openejb.osgi.export>
+    <openejb.osgi.export>org.apache.tomee*;version=8.0.19-css</openejb.osgi.export>
     <openejb.osgi.export.pkg>org.apache.tomee</openejb.osgi.export.pkg>
-    <openejb.osgi.export.version>8.0.19-SNAPSHOT</openejb.osgi.export.version>
+    <openejb.osgi.export.version>8.0.19-css</openejb.osgi.export.version>
     <openejb.osgi.fragment />
     <openejb.osgi.import>*</openejb.osgi.import>
     <openejb.osgi.import.pkg>*</openejb.osgi.import.pkg>
@@ -116,9 +116,9 @@
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <sourceReleaseAssemblyDescriptor>source-release</sourceReleaseAssemblyDescriptor>
     <surefire.version>2.22.2</surefire.version>
-    <tomcat.version>9.0.87</tomcat.version>
+    <tomcat.version>9.0.91</tomcat.version>
     <tomee.build.name>org.apache.tomee.gradle.tomee-embedded</tomee.build.name>
-    <tomee.version>8.0.19-SNAPSHOT</tomee.version>
+    <tomee.version>8.0.19-css</tomee.version>
     <version.activemq>5.16.7</version.activemq>
     <version.aether>1.13.1</version.aether>
     <version.arquillian>1.1.13.Final</version.arquillian>
@@ -1248,7 +1248,7 @@
       <dependency>
         <groupId>org.apache.tomee.bom</groupId>
         <artifactId>jaxb-runtime</artifactId>
-        <version>8.0.19-SNAPSHOT</version>
+        <version>8.0.19-css</version>
         <type>pom</type>
       </dependency>
       <dependency>
@@ -1259,7 +1259,7 @@
       <dependency>
         <groupId>org.apache.tomee</groupId>
         <artifactId>taglibs-shade</artifactId>
-        <version>8.0.19-SNAPSHOT</version>
+        <version>8.0.19-css</version>
         <exclusions>
           <exclusion>
             <groupId>*</groupId>
@@ -1434,7 +1434,7 @@
       </testResource>
     </testResources>
     <directory>/Users/dominik.vogt/Entwicklung/github/tomee/gradle/gradle-tomee-embedded/target</directory>
-    <finalName>tomee-embedded-8.0.19-SNAPSHOT</finalName>
+    <finalName>tomee-embedded-8.0.19-css</finalName>
     <pluginManagement>
       <plugins>
         <plugin>
@@ -1920,14 +1920,14 @@
               <instructions>
                 <Bundle-Name>Apache TomEE :: Gradle Plugins :: TomEE Embedded</Bundle-Name>
                 <Bundle-Activator />
-                <Export-Package>org.apache.tomee*;version=8.0.19-SNAPSHOT</Export-Package>
+                <Export-Package>org.apache.tomee*;version=8.0.19-css</Export-Package>
                 <Import-Package>*</Import-Package>
                 <Fragment-Host />
                 <Require-Bundle />
                 <DynamicImport-Package />
                 <Private-Package>!*</Private-Package>
                 <Implementation-Title>Apache OpenEJB</Implementation-Title>
-                <Implementation-Version>8.0.19-SNAPSHOT</Implementation-Version>
+                <Implementation-Version>8.0.19-css</Implementation-Version>
                 <Include-Resource>{maven-resources}</Include-Resource>
               </instructions>
             </configuration>
@@ -1943,14 +1943,14 @@
           <instructions>
             <Bundle-Name>Apache TomEE :: Gradle Plugins :: TomEE Embedded</Bundle-Name>
             <Bundle-Activator />
-            <Export-Package>org.apache.tomee*;version=8.0.19-SNAPSHOT</Export-Package>
+            <Export-Package>org.apache.tomee*;version=8.0.19-css</Export-Package>
             <Import-Package>*</Import-Package>
             <Fragment-Host />
             <Require-Bundle />
             <DynamicImport-Package />
             <Private-Package>!*</Private-Package>
             <Implementation-Title>Apache OpenEJB</Implementation-Title>
-            <Implementation-Version>8.0.19-SNAPSHOT</Implementation-Version>
+            <Implementation-Version>8.0.19-css</Implementation-Version>
             <Include-Resource>{maven-resources}</Include-Resource>
           </instructions>
         </configuration>
@@ -2026,7 +2026,7 @@
           <artifact>
             <groupId>org.apache.tomee.gradle</groupId>
             <artifactId>tomee</artifactId>
-            <version>8.0.19-SNAPSHOT</version>
+            <version>8.0.19-css</version>
           </artifact>
           <doapOptions>
             <programmingLanguage>Java</programmingLanguage>
