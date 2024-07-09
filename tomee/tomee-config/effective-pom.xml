@@ -8,7 +8,7 @@
 <!-- ====================================================================== -->
 <!--                                                                        -->
 <!-- Effective POM for project                                              -->
-<!-- 'org.apache.tomee:tomee-config:jar:8.0.19-css'                         -->
+<!-- 'org.apache.tomee:tomee-config:jar:8.0.20-SNAPSHOT'                         -->
 <!--                                                                        -->
 <!-- ====================================================================== -->
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
@@ -16,11 +16,11 @@
   <parent>
     <groupId>org.apache.tomee</groupId>
     <artifactId>tomee</artifactId>
-    <version>8.0.19-css</version>
+    <version>8.0.20-SNAPSHOT</version>
   </parent>
   <groupId>org.apache.tomee</groupId>
   <artifactId>tomee-config</artifactId>
-  <version>8.0.19-css</version>
+  <version>8.0.20-SNAPSHOT</version>
   <name>TomEE :: TomEE :: Config</name>
   <description>Apache OpenEJB is an open source, modular, configurable and extensible EJB Container System and EJB Server.</description>
   <url>https://tomee.apache.org/tomee/tomee-config</url>
@@ -101,9 +101,9 @@
     <openejb.bundle.activator />
     <openejb.osgi.dynamic.import />
     <openejb.osgi.dynamic.import.pkg />
-    <openejb.osgi.export>org.apache.tomee*;version=8.0.19-css</openejb.osgi.export>
+    <openejb.osgi.export>org.apache.tomee*;version=8.0.20-SNAPSHOT</openejb.osgi.export>
     <openejb.osgi.export.pkg>org.apache.tomee</openejb.osgi.export.pkg>
-    <openejb.osgi.export.version>8.0.19-css</openejb.osgi.export.version>
+    <openejb.osgi.export.version>8.0.20-SNAPSHOT</openejb.osgi.export.version>
     <openejb.osgi.fragment />
     <openejb.osgi.import>*</openejb.osgi.import>
     <openejb.osgi.import.pkg>*</openejb.osgi.import.pkg>
@@ -118,7 +118,7 @@
     <surefire.version>2.22.2</surefire.version>
     <tomcat.version>9.0.91</tomcat.version>
     <tomee.build.name>org.apache.tomee.tomee.config</tomee.build.name>
-    <tomee.version>8.0.19-css</tomee.version>
+    <tomee.version>8.0.20-SNAPSHOT</tomee.version>
     <version.activemq>5.16.7</version.activemq>
     <version.aether>1.13.1</version.aether>
     <version.arquillian>1.1.13.Final</version.arquillian>
@@ -313,12 +313,12 @@
       <dependency>
         <groupId>org.apache.tomee</groupId>
         <artifactId>openejb-client</artifactId>
-        <version>8.0.19-css</version>
+        <version>8.0.20-SNAPSHOT</version>
       </dependency>
       <dependency>
         <groupId>org.apache.tomee</groupId>
         <artifactId>openejb-core</artifactId>
-        <version>8.0.19-css</version>
+        <version>8.0.20-SNAPSHOT</version>
       </dependency>
       <dependency>
         <groupId>org.apache.tomcat</groupId>
@@ -329,27 +329,27 @@
       <dependency>
         <groupId>org.apache.tomee</groupId>
         <artifactId>openejb-server</artifactId>
-        <version>8.0.19-css</version>
+        <version>8.0.20-SNAPSHOT</version>
       </dependency>
       <dependency>
         <groupId>org.apache.tomee</groupId>
         <artifactId>openejb-ejbd</artifactId>
-        <version>8.0.19-css</version>
+        <version>8.0.20-SNAPSHOT</version>
       </dependency>
       <dependency>
         <groupId>org.apache.tomee</groupId>
         <artifactId>openejb-rest</artifactId>
-        <version>8.0.19-css</version>
+        <version>8.0.20-SNAPSHOT</version>
       </dependency>
       <dependency>
         <groupId>org.apache.tomee</groupId>
         <artifactId>openejb-cxf-rs</artifactId>
-        <version>8.0.19-css</version>
+        <version>8.0.20-SNAPSHOT</version>
       </dependency>
       <dependency>
         <groupId>org.apache.tomee</groupId>
         <artifactId>openejb-http</artifactId>
-        <version>8.0.19-css</version>
+        <version>8.0.20-SNAPSHOT</version>
       </dependency>
       <dependency>
         <groupId>org.apache.tomcat</groupId>
@@ -359,12 +359,12 @@
       <dependency>
         <groupId>org.apache.tomee</groupId>
         <artifactId>openejb-cxf-transport</artifactId>
-        <version>8.0.19-css</version>
+        <version>8.0.20-SNAPSHOT</version>
       </dependency>
       <dependency>
         <groupId>org.apache.tomee</groupId>
         <artifactId>openejb-loader</artifactId>
-        <version>8.0.19-css</version>
+        <version>8.0.20-SNAPSHOT</version>
       </dependency>
       <dependency>
         <groupId>javax.faces</groupId>
@@ -379,12 +379,12 @@
       <dependency>
         <groupId>org.apache.tomee</groupId>
         <artifactId>openejb-webservices</artifactId>
-        <version>8.0.19-css</version>
+        <version>8.0.20-SNAPSHOT</version>
       </dependency>
       <dependency>
         <groupId>org.apache.tomee</groupId>
         <artifactId>openejb-cxf</artifactId>
-        <version>8.0.19-css</version>
+        <version>8.0.20-SNAPSHOT</version>
         <exclusions>
           <exclusion>
             <groupId>javax.xml.soap</groupId>
@@ -395,7 +395,7 @@
       <dependency>
         <groupId>org.apache.tomee</groupId>
         <artifactId>openejb-core-eclipselink</artifactId>
-        <version>8.0.19-css</version>
+        <version>8.0.20-SNAPSHOT</version>
       </dependency>
       <dependency>
         <groupId>org.eclipse.microprofile.config</groupId>
@@ -1430,7 +1430,7 @@
       <dependency>
         <groupId>org.apache.tomee.bom</groupId>
         <artifactId>jaxb-runtime</artifactId>
-        <version>8.0.19-css</version>
+        <version>8.0.20-SNAPSHOT</version>
         <type>pom</type>
       </dependency>
       <dependency>
@@ -1441,7 +1441,7 @@
       <dependency>
         <groupId>org.apache.tomee</groupId>
         <artifactId>taglibs-shade</artifactId>
-        <version>8.0.19-css</version>
+        <version>8.0.20-SNAPSHOT</version>
         <exclusions>
           <exclusion>
             <groupId>*</groupId>
@@ -1487,7 +1487,7 @@
     <dependency>
       <groupId>org.apache.tomee</groupId>
       <artifactId>openejb-core</artifactId>
-      <version>8.0.19-css</version>
+      <version>8.0.20-SNAPSHOT</version>
       <scope>compile</scope>
       <exclusions>
         <exclusion>
@@ -1638,7 +1638,7 @@
       </testResource>
     </testResources>
     <directory>/Users/dominik.vogt/Entwicklung/github/tomee/tomee/tomee-config/target</directory>
-    <finalName>tomee-config-8.0.19-css</finalName>
+    <finalName>tomee-config-8.0.20-SNAPSHOT</finalName>
     <pluginManagement>
       <plugins>
         <plugin>
@@ -2124,14 +2124,14 @@
               <instructions>
                 <Bundle-Name>Apache TomEE :: TomEE :: Config</Bundle-Name>
                 <Bundle-Activator />
-                <Export-Package>org.apache.tomee*;version=8.0.19-css</Export-Package>
+                <Export-Package>org.apache.tomee*;version=8.0.20-SNAPSHOT</Export-Package>
                 <Import-Package>*</Import-Package>
                 <Fragment-Host />
                 <Require-Bundle />
                 <DynamicImport-Package />
                 <Private-Package>!*</Private-Package>
                 <Implementation-Title>Apache OpenEJB</Implementation-Title>
-                <Implementation-Version>8.0.19-css</Implementation-Version>
+                <Implementation-Version>8.0.20-SNAPSHOT</Implementation-Version>
                 <Include-Resource>{maven-resources}</Include-Resource>
               </instructions>
             </configuration>
@@ -2147,14 +2147,14 @@
           <instructions>
             <Bundle-Name>Apache TomEE :: TomEE :: Config</Bundle-Name>
             <Bundle-Activator />
-            <Export-Package>org.apache.tomee*;version=8.0.19-css</Export-Package>
+            <Export-Package>org.apache.tomee*;version=8.0.20-SNAPSHOT</Export-Package>
             <Import-Package>*</Import-Package>
             <Fragment-Host />
             <Require-Bundle />
             <DynamicImport-Package />
             <Private-Package>!*</Private-Package>
             <Implementation-Title>Apache OpenEJB</Implementation-Title>
-            <Implementation-Version>8.0.19-css</Implementation-Version>
+            <Implementation-Version>8.0.20-SNAPSHOT</Implementation-Version>
             <Include-Resource>{maven-resources}</Include-Resource>
           </instructions>
         </configuration>
@@ -2230,7 +2230,7 @@
           <artifact>
             <groupId>org.apache.tomee</groupId>
             <artifactId>tomee</artifactId>
-            <version>8.0.19-css</version>
+            <version>8.0.20-SNAPSHOT</version>
           </artifact>
           <doapOptions>
             <programmingLanguage>Java</programmingLanguage>
