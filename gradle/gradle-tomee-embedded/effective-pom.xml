@@ -116,7 +116,7 @@
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <sourceReleaseAssemblyDescriptor>source-release</sourceReleaseAssemblyDescriptor>
     <surefire.version>2.22.2</surefire.version>
-     <tomcat.version>9.0.98</tomcat.version>
+    <tomcat.version>9.0.98</tomcat.version>
     <tomee.build.name>org.apache.tomee.gradle.tomee-embedded</tomee.build.name>
     <tomee.version>8.0.20-css</tomee.version>
     <version.activemq>5.16.7</version.activemq>
@@ -864,7 +864,7 @@
       <dependency>
         <groupId>org.apache.tomcat</groupId>
         <artifactId>tomcat-catalina</artifactId>
-        <version>9.0.91</version>
+        <version>9.0.98</version>
       </dependency>
       <dependency>
         <groupId>org.apache.openejb.shade</groupId>
@@ -1405,9 +1405,6 @@
       <url>https://repository.apache.org/snapshots</url>
     </pluginRepository>
     <pluginRepository>
-      <releases>
-        <updatePolicy>never</updatePolicy>
-      </releases>
       <snapshots>
         <enabled>false</enabled>
       </snapshots>
